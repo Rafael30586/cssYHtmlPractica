@@ -54,6 +54,11 @@
     flex-basis: 50px;
     flex-grow: 0.4;
     order: 4;
+    /*flex-shrink: 2;*/
+}
+
+[color="rojo"]{
+    background-color: #e33723;
 }
 
 #item-b3{
