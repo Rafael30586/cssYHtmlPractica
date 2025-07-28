@@ -1,0 +1,53 @@
+.flex-container{
+    display: flex;
+    height: 400px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-item{
+    background-color: #c0e101;
+    flex-basis: 100px;
+    height: 100px;
+}
+
+#item-2{
+    align-self: flex-end;
+}
+
+#item-3{
+    align-self: flex-start;
+}
+
+.flex-container-2{
+    margin-top: 50px;
+    gap: 10px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+}
+
+.flex-item-b{
+    background-color: #91337d;
+    height: 100px;
+}
+
+#item-b1{
+    flex-basis: 40px;
+    flex-grow: 0.2;
+}
+
+#item-b2{
+    flex-basis: 50px;
+    flex-grow: 0.4;
+}
+
+#item-b3{
+    flex-basis: 30px;
+    flex-grow: 0.1;
+}
+
+
+
+
