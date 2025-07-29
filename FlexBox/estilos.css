@@ -82,6 +82,7 @@
 .flex-container-3{
     display: flex;
     gap: 30px;
+    justify-content: flex-end;
 }
 
 .flex-item-c{
@@ -101,6 +102,27 @@
 [color="golden-mist"]{
     background-color: #d3c991;
     color: black;
+}
+
+.flex-container-4{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 1000px;
+}
+
+.flex-item-d{
+    flex-basis: 400px;
+    height: 200px;
+    background-color:#98c4f3;
+    color: black;
+}
+
+[color="good-luck"]{
+    background-color:#7dd996;
 }
 
 
