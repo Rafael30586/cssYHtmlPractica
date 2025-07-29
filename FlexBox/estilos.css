@@ -79,6 +79,30 @@
     order: 2;
 }
 
+.flex-container-3{
+    display: flex;
+    gap: 30px;
+}
+
+.flex-item-c{
+    width: 500px;
+    height: 100px;
+    background-color:#548aa6;
+}
+
+#item-c1{
+    flex-shrink: 5;
+}
+
+#item-c2{
+    flex-shrink: 0.8;
+}
+
+[color="golden-mist"]{
+    background-color: #d3c991;
+    color: black;
+}
+
 
 
 
