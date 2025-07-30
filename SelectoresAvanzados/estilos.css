@@ -1,0 +1,38 @@
+img[alt="Foto de Kirby"]{
+    opacity: 0.5;
+}
+
+img[src$="png"]{ /*El $ es para elementos que terminen con una secuencia de caracteres, en este caso con "png"*/
+    outline-style: dotted;
+    outline-width: 2px;
+    outline-color: #9962e0;
+}
+
+img[alt^="Foto"]{/*El ^ es para elementos que comiencen con una secuencia de caracteres, en este caso "Foto"*/
+    width: 150px;
+}
+
+ul > li { /* Este signo sirve para hijos directos. En este caso para lis que sean hijos directos de un ul.Si no colocamos el signo incluiría a nietos, tataranietos, etc.*/
+    color: #66d187;
+}
+
+ul strong{ /* strong es nieto de ul e hijo de un li*/
+    color: #da3420;
+}
+
+h1 + p{ /* Se está seleccionando a ps que le sigan a un h1 (hermano adyacente)*/
+    color: #9786e8;
+}
+
+h1 + p + p{ /* Selección de un p, que es hermano de un p, que a su vez es hermano de un h1*/
+    padding: 10px;
+    border-style: groove;
+}
+
+h1 ~ p{ /* Abarca a todos los p que sean hermanos de un h1, no solamente adyacentes*/
+    text-decoration: underline;
+}
+
+h1 , p { /* Selecciona a los p y a los h1*/
+    text-align: center;
+}
