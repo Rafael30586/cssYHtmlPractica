@@ -13,6 +13,8 @@
     align-items: center;
     justify-content: space-around;
     color: black;
+    border-style: dotted;
+    border-color: #4fe777;
 }
 
 .flex-item{
@@ -36,6 +38,8 @@
     height: 500px;
     align-items: center;
     display: flex;
+    border-style: groove;
+    border-color: #66b034;
 }
 
 .flex-item-b{
@@ -83,6 +87,9 @@
     display: flex;
     gap: 30px;
     justify-content: flex-end;
+    border-style: double;
+    border-color: #1703d2;
+    margin-top: 20px;
 }
 
 .flex-item-c{
@@ -112,6 +119,8 @@
     justify-content: space-around;
     align-content: space-between;
     height: 1000px;
+    border-style: dashed;
+    border-color:#be45b3;
 }
 
 .flex-item-d{
@@ -134,6 +143,8 @@
     height: 500px;
     justify-content: space-around;
     padding: 50px;
+    border-style: groove;
+    border-color: #d29d8d;
 }
 
 .flex-item-e{
