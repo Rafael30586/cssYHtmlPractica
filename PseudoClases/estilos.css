@@ -1,0 +1,53 @@
+h1{
+    color: #454ba9;
+    padding: 10px;
+}
+
+h1:hover{
+    color: #d9ecda;
+}
+
+h1:active{ /*Se activa cuando damos click al elemento*/
+    background-color: #d39fe8;
+}
+
+li:first-child{
+    color: #169862;
+}
+
+li:nth-child(3n){ /*Los modifica de tres en tres*/
+    color: #f9f88f;
+}
+
+li:nth-child(2){
+    color:#e32f52;
+}
+
+li:last-child{
+    color:#43dced
+}
+
+div:empty{ /*Para que funcione ni siquiera debe haber espacio vacío entre la etiqueta de apertura y la de cierre*/
+    width: 40px;
+    height: 40px;
+    background-color: #bf453e;
+}
+
+input[type="checkbox"]{
+    margin: 20px;
+}
+
+input[type="checkbox"]:checked{
+    width: 20px;
+    height: 20px;
+}
+
+a:link{
+    color: #4da30f;
+}
+
+a:visited{
+    color:#d545ce;
+}
+
+/*Otras pseudoclases: focus, fullscreen, enabled, invalid*/
