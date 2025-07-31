@@ -42,6 +42,11 @@ input[type="checkbox"]:checked{
     height: 20px;
 }
 
+input[type="text"]:focus{
+    background-color: #b0a516;
+    color: #47118a;
+}
+
 a:link{
     color: #4da30f;
 }
@@ -49,5 +54,11 @@ a:link{
 a:visited{
     color:#d545ce;
 }
+
+input[type="email"]:invalid{
+    color: #60cd5e;
+}
+
+
 
 /*Otras pseudoclases: focus, fullscreen, enabled, invalid*/
