@@ -1,0 +1,17 @@
+h1::first-letter{
+    color: #b36eef;
+    font-size: 60px;
+}
+
+h1::selection{
+    background-color: #41bb65;
+    color: #741e51;
+}
+
+li::marker{
+    color:#d83b54;
+}
+
+input[type="text"]::placeholder{
+    color: #ef0535;
+}
