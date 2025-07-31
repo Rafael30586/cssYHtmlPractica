@@ -1,0 +1,31 @@
+ul{
+    background-color: #dbea60;
+    padding: 10px;
+    position: relative;
+}
+
+li{
+    display:inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.opcion{
+    margin-left: 20px;
+}
+
+.opcion:hover{
+    background-color: #8844af;
+    color: aliceblue;
+}
+
+.boton{
+    background-color: #6cd4b6;
+    border-radius: 5%;
+    position: absolute;
+    right: 50px;
+}
+
+.boton:hover{
+    opacity: 0.7;
+}

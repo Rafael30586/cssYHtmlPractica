@@ -40,7 +40,7 @@
 }
 
 #caja5{
-    background-color: #7652e1;
+    background-color: #7652e1; /*Esta caja no ocupa lugar en la página y se ubica con top y left respecto a sus contenedor, solo porque este último es relative, si el contenedor fuera static la caja se ubicaría relativo al html*/
     position: absolute;
     top: 10px;
     left: 40px;
