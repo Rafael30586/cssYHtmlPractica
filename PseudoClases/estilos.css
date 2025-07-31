@@ -59,6 +59,18 @@ input[type="email"]:invalid{
     color: #60cd5e;
 }
 
+input[type="email"]:valid{
+    color:#70aab0
+}
 
+label:has(input:invalid){
+    color: #1b0bb5;
+    background-color: #e99101;
+}
+
+section:has(ul){ /*Si el section tiene un li adentro le aplica las propiedades dentro de las llaves*/
+    background-color: #f9ab1f;
+    border-radius: 1%;
+}
 
 /*Otras pseudoclases: focus, fullscreen, enabled, invalid*/
