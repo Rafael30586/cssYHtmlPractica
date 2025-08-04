@@ -1,0 +1,9 @@
+@font-face { 
+    font-family: "Rafael";
+    src: url("Oi/Oi-Regular.ttf"); /*Enlace a fuente descargada de google fonts*/
+}
+
+@font-face {
+    font-family: "Rafael2";
+    src: url("Inter/Inter-Italic-VariableFont_opsz\,wght.ttf");
+}

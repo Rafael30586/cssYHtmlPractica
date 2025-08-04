@@ -1,0 +1,18 @@
+p{
+    text-align: justify; /*Justifica el texto, lo empareja en los costados*/
+    line-height: 60px; /*Es el espacio enter los diferentes renglones*/
+}
+
+span{
+    text-decoration: line-through; /*Tacha el texto*/
+    letter-spacing: 10px; /*Espaciado entre letras*/
+    text-transform: uppercase; /*Transofma las letras, en este caso en mayúsculas*/
+}
+
+#parrafo{
+    font-family: "Rafael";
+}
+
+#parrafo2{
+    font-family: "Rafael2";
+}
