@@ -1,0 +1,15 @@
+
+
+div{
+    background-color: #0a2284;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 50vw; /* Mide la mitad de la pantalla a lo ancho*/
+    height: 40vh; /*Mide el 40% de la pantalla a lo alto*/
+    margin:auto;
+}
+
+p{
+    font-size: 0.8em; /*Tamaño relativo al del div que lo contiene*/
+}
