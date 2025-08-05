@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+.caja{
+    background-color: #af11f8;
+    border-color: #66aef8;
+    border-style: solid;
+    border-width: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#caja1{
+    box-sizing: border-box; /* La caja mantiene el ancho de 100px y el alto de 100px a pesar del borde y el padding*/
+}
+
+#caja2{
+    box-sizing: content-box; /* A los 100px de ancho y de alto, se le suman los de borde y padding (este es el valor por defecto de box-sizing)*/
+}
+
