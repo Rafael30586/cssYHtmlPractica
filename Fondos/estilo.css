@@ -13,3 +13,52 @@
 Valores para blend-mode: color, color-burn, color-dodge, darken, difference, exclusion, hard light, hue
 lighten, luminosity, multiply, normal, overlay, saturation, screen, soft light
 */
+
+.otro-contenedor{
+    width: 500px;
+    height: 500px;
+    background: url("https://nerdbot.com/wp-content/uploads/2018/02/img_3523.jpg");
+    background-size: 170px; /* Es el ancho que va a tener la imagen de fondo*/
+}
+
+.contenedor3{
+    width: 200px;
+    height: 200px;
+    background: url("https://i.pinimg.com/236x/6a/90/05/6a90053af7718a89328217b6af98013b--comic-books-comic-art.jpg");
+    background-size: contain; /*Fuerza al navegador a mostrar la imagen entera al menos una vez*/
+}
+
+.contenedor4{
+    background: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/06/barry-allen-running-through-his-clothes-from-the-flash-year-one.jpg");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: right; /* Además se puede usar: center, bottom, left y top*/
+}
+
+.contenedor5{
+    background: url("https://lh5.ggpht.com/-fWQHeakzLMM/TfdwGl_HocI/AAAAAAAATm0/lrWsl1zaUfk/DD8681-SUPERMAN-COMIC.jpg");
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: 20px 10px; /*Corre la posición del fondo en horizontal y vertical*/
+}
+
+.contenedor6{
+    background: url("https://i.pinimg.com/originals/7a/19/ae/7a19ae1b91031c7962fba82c8f152c7f.jpg");
+    width: 500px;
+    height: 500px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #93dfe7;
+}
+
+.contenedor7{
+    background: url("https://www.writeups.org/wp-content/uploads/Martian-Manhunter-DC-Comics-JSA.jpg");
+    width: 800px;
+    height: 800px;
+    background-size: 200px;
+    background-repeat: repeat-y; /* La imagen se repite solo en el ehje y*/
+    background-color: #181890;
+}
