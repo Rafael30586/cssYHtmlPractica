@@ -1,0 +1,47 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+}
+
+#caja1{
+    background-color: #7008d8;
+    box-shadow: 10px 20px 50px 10px #fa3ae3; 
+}
+
+#caja2{
+    background-color: #4a2cb9;
+    box-shadow: 0px 20px 50px 10px#26d45c;
+}
+
+#caja3{
+    background-color: #dd8b0d;
+    box-shadow: 10px 50px 50px 10px #145cfa;
+}
+
+#caja4{
+    background-color: #139a23;
+    box-shadow: 10px 20px 20px 10px #b126cb;
+}
+
+#caja5{
+    background-color: #486a91;
+    box-shadow: 10px 20px 50px 40px #40c5f9;
+}
+
+#caja6{
+    background-color: #e95e28;
+    box-shadow: 0 0 30px 0#f7d39d; /*Según Dalto, así es como se suele usar (excepto por los colores)*/
+}
+
+/*El primer valor de box shadow mueve la sombra en horizontal
+El segundo en vertical
+El tercero es del difuminado (Según dalto es el más importante)
+El cuarto no sé como explicarlo
+El quinto es el color de la sombra
+*/
