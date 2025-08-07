@@ -58,3 +58,9 @@ input{
     border-radius: 2%;
 }
 
+textarea{
+    resize: none;
+    width: 500px;
+    height: 300px;
+}
+
