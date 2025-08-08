@@ -64,3 +64,27 @@ textarea{
     height: 300px;
 }
 
+details{
+    font-size: 2em;
+}
+
+details[open]{
+    color: #2888f6;
+}
+
+table{
+    border-spacing: 5px;
+}
+
+th{
+    border-style: double;
+    border-color: #b12bd4;
+    padding: 5px;
+}
+
+td{
+    border-style: solid;
+    border-color: #950914;
+    padding: 5px;
+}
+
