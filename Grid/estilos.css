@@ -1,0 +1,137 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 20% 200px 200px; /*Son tres columnas*/
+    grid-template-rows: 300px 100px; /*Dos filas*/
+}
+
+.caja{
+    background-color: #d448e9;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+#contenedor2{
+    grid-template-columns: auto auto 200px;
+}
+
+.tipo2{
+    background-color: #8952d3;
+}
+
+#caja8{
+    width: 300px;
+}
+
+#contenedor3{
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+.tipo3{
+    background-color: #b54a26;
+}
+
+#contenedor4{
+    grid-template-columns: 100px repeat(3,1fr) 1.7fr; /*Hace 1 columna de 100 px de ancho, 3 columnas y una de 1.7fr*/
+}
+
+.tipo4{
+    background-color: #6dc433;
+    color:#3D3D3D;
+}
+
+#contenedor5{
+    grid-template-columns: repeat(2,1fr 2fr); /*Repite una vez el patrón 1 columna con 1fr de ancho y otra de 2fr de ancho*/
+}
+
+.tipo5{
+    background-color: #1c09ba;
+}
+
+#contenedor6{
+    grid-template-columns: minmax(200px, 400px) minmax(100px, 500px) 0.8fr 100px; /*La primera columna tiene un ancho mínimo de 200px y un máximo de 400px, la misma lógica aplica para la segunda columna*/
+}
+
+.tipo6{
+    background-color: #e6e4a7;
+    color:#3D3D3D;
+}
+
+.contenedor-grid2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,200px);
+    column-gap: 40px; /*Espacio entre columnas*/
+    row-gap: 100px;/*Espacio entre filas*/
+}
+
+.tipo7{
+    background-color: #065a59;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.contenedor-grid3{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(2,200px);
+    grid-auto-rows: 150px; /*Las filas que se agregan después de las expl{icitas tendrán este tamaño*/
+    gap: 20px;
+}
+
+.tipo8{
+    background-color: #b1133a;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.contenedor-grid4{
+    display: grid;
+    margin-top: 50px;
+    gap: 30px;
+    grid-auto-flow: column; /*Se van creando nuevas columnas en lugar de filas (esto último es lo que ocurre por defecto)*/
+    grid-auto-columns: 200px; /*Las columnas que se van creando tienen este valor*/
+    grid-auto-rows: 100px;
+}
+
+.tipo9{
+    background-color: #53e0a2;
+    padding: 5px;
+    font-size: 30px;
+    color: #3D3D3D;
+}
+
+.contenedor-grid5{
+    display: grid;
+    margin-top: 50px;
+    gap:10px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr)); /*auto-fill va rellenando con columnas*/
+}
+
+.tipo10{
+    background-color: #ead313;
+    padding: 5px;
+    font-size: 30px;
+    color: #3D3D3D;
+}
+
+.contenedor-grid6{
+    display: grid;
+    margin-top: 50px;
+    gap:10px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); /*auto-fit adapta las columnas al tamaño de la pantalla*/
+}
+
+.tipo11{
+    background-color: #109a9b; 
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
