@@ -135,3 +135,119 @@
     color: white;
 }
 
+#contenedor12{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: 200px;
+    row-gap: 10px;
+    column-gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.tipo12{
+    background-color: #f2ef6a;
+    padding: 20px;
+}
+
+#caja1-contenedor12{ /*La caja va desde la línea 1 hasta la línea 3, tanto en filas como en columnas*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #f287b8;
+}
+
+#caja7-contenedor12{
+    grid-column-end: span 2; /*La caja estaría ocupando dos columnas*/
+}
+
+#caja4-contenedor12{
+    grid-column: 1/span 2; /*grid column sirve como abreviatura a grid column start y grid column end. En este caso empiezxa en la primera columna y se extiende dos*/
+}
+
+#contenedor13{
+    display: grid;
+    column-gap: 5px;
+    row-gap: 10px;
+    margin-top: 50px;
+    grid-template-columns: repeat(4,200px);
+    grid-auto-flow: dense; /*Acomoda los grid items para que no estén demsiado desprolijos*/
+    
+}
+
+.tipo13{
+    background-color: #3b423f;
+    color:white;
+    padding: 10px;
+}
+
+#caja6-contenedor13{
+    grid-column:2/4;
+}
+
+#caja10-contenedor13{
+    grid-row: 3/span 2;
+}
+
+#contenedor14{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    margin-top: 50px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.tipo14{
+    background-color: #8520cd;
+    color:white;
+    font-size: 2em;
+    padding: 5px;
+    text-align: center;
+}
+
+#caja1-contenedor14{
+    grid-area: header;
+}
+
+#caja2-contenedor14{
+    grid-area: nav;
+}
+
+#caja3-contenedor14{
+    grid-area: main;
+}
+
+#caja4-contenedor14{
+    grid-area: aside;
+}
+
+#caja5-contenedor14{
+    grid-area: footer;
+}
+
+#contenedor15{
+    display: grid;
+    font-size: 2em;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(4,200px);
+    gap: 20px;
+    margin-top: 50px;
+    align-items: center; /*Funciona de manera simila a flexbox*/
+    justify-items: stretch; /*Este es el valor por defecto*/
+    background-color: #959449;
+    justify-content: space-between;
+}
+
+.tipo15{
+    background-color: #c01f13;
+    color: white;
+}
+
+
+
