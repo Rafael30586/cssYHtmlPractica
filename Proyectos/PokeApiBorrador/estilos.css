@@ -1,12 +1,15 @@
+/* MAIN CONTAINER */
+
 .container{
     display: grid;
-    grid-template-columns: 100px 400px 100px;
+    grid-template-columns: 100px 500px 100px;
     grid-template-rows: 200px 80px;
-    width: 600px;
+    width: 700px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
+/* ARROW BUTTONS*/
 .arrow-container{
     background-color: #f3ed1a;
     display: flex;
@@ -20,6 +23,8 @@
     grid-column-end: 2;
     grid-row-start:1;
     grid-row-end:3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .arrow-container-2{
@@ -27,6 +32,8 @@
     grid-column-end: 4;
     grid-row-start:1;
     grid-row-end:3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .arrow{
@@ -43,8 +50,21 @@
     clip-path: polygon(30% 0, 75% 50%, 30% 100%);
 }
 
+/* POKEMON COPNTAINER*/
 .pokemon-container{
     display: flex;
+    justify-content: space-evenly;
+}
+
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.side-card{
+    filter: brightness(0.5);
+    justify-content: center;
 }
 
 .pokemon-img{
@@ -52,8 +72,10 @@
     height: 100px;
     object-fit: cover;
     object-position: center;
+    border-radius: 5px;
 }
 
+/* PANEL */
 .panel{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -81,4 +103,7 @@
 .search-button{
     height: 40px;
     align-self: center;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
