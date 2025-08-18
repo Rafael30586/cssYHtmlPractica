@@ -29,6 +29,11 @@
     to{transform: rotateY(150deg);}
 }
 
+body{
+    height: 300vh;
+}
+
+
 #estrella{
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     background-color: #f81905;
@@ -138,5 +143,25 @@
     width: 700px;
     transition-duration: .5;
     background-color: #03d5a5;
+}
+
+.container{
+    height: 300px;
+    overflow-y: scroll;
+    position:relative;
+    background-color: #2b28b6;
+}
+
+#objeto3{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: #bcdacc;
+    animation-name: rotacion-infinita;
+    animation-fill-mode: both;
+    animation-timing-function: linear; /*
+    animation-duration: 1s;
+    animation-iteration-count: infinite;*/
+    animation-timeline: scroll(); /*Por alguna razón no funciona y no sé porqué*/
 }
 

@@ -9,6 +9,15 @@
     margin-top: 200px;
 }
 
+@media screen and (max-width: 700px){
+    .container{
+        grid-template-columns: 50px 200px 50px;
+        width: 300px;
+        margin-top: 80px;
+    }
+}
+
+
 /* ARROW BUTTONS*/
 .arrow-container{
     background-color: #f3ed1a;
@@ -17,6 +26,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 .arrow-container-1{
     grid-column-start: 1;
@@ -41,6 +51,15 @@
     height: 80px;
     border: none;
 }
+
+@media screen and (max-width: 700px){
+    .arrow{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
 
 .left-arrow{
     clip-path: polygon(70% 0, 25% 50%, 70% 100%);
@@ -67,12 +86,20 @@
     justify-content: center;
 }
 
+
+
 .pokemon-img{
     width: 100px;
     height: 100px;
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px){
+    .side-pokemon-image{
+        width: 0;
+    }
 }
 
 /* PANEL */
@@ -86,6 +113,13 @@
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 700px){
+    .panel{
+        justify-content: space-evenly;
+    }
+}
+
+
 .theme-button{
     clip-path: circle(50.0% at 50% 50%);
     height: 40px;
@@ -95,9 +129,23 @@
     justify-self: start;
 }
 
+@media only screen and (max-width: 700px){
+    .theme-button{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
 .id-input{
     height: 20px;
     align-self: center;
+}
+
+@media only screen and (max-width: 700px){
+    .id-input{
+        width: 50px;
+    }
 }
 
 .search-button{
@@ -107,3 +155,13 @@
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+@media only screen and (max-width: 700px){
+    .search-button{
+        font-size: .7rem;
+        padding-top: 0;
+    }
+}
+
+
+
