@@ -24,3 +24,10 @@
     backdrop-filter: hue-rotate(-80deg);
 }
 
+.caja4{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    backdrop-filter: grayscale(1);
+}
+
