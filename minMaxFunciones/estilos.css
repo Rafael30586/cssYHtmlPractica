@@ -1,0 +1,22 @@
+.caja{
+    background-color: #9ba021;
+    width: min(500px,50vw); /*Se puede agregar más de dos argumentos si se quiere*/
+    height: 200px;
+}
+
+.cajita{
+    background-color: #2ad305;
+    width: max(200px,30vw,25%);
+    height: 200px;
+    place-content: center;
+}
+
+.cajita > h3 {
+    text-align: center;
+}
+
+.caja3{
+    background-color: #e2f7ea;
+    width: clamp(250px,50%,700px); /*Los tres argumentos son: valor mínimo, valor ideal y valor máximo*/
+    height: 200px;
+}
