@@ -1,0 +1,9 @@
+.caja{
+    background-color: #0ccfc3;
+    width: 20vw;
+    height: 300px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #8b9cf2 #21fa4c;
+    scrollbar-width: thin; /*puede aceptar los valores auto, none y thin*/
+}
