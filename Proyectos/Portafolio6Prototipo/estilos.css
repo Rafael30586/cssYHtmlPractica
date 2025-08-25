@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes juntar {
+    from{letter-spacing: 100px;}
+    to{letter-spacing: 10px;}
+    
+}
+
 :root{
+    --color-fondo: #FEFFF0;
     --color-principal:#FF5E52;
+    --color-principal-2:#CF3F2B;
     --color-boton:#F2F527;
     --color-boton-2:#B3B51F;
 }
@@ -9,7 +22,7 @@
 body{
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
-    background-color: #FEFFF0
+    background-color: var(--color-fondo)
 }
 /* HEADER */
 
@@ -20,10 +33,11 @@ header{
     color: var(--color-principal);
 }
 
-.contenedor-boton-tema{
+.contenedor-boton-estilos{
     width: 100%;
     display: flex;
     justify-content: center;
+    gap: 400px;
 }
 
 .boton-tema{
@@ -39,11 +53,21 @@ header{
     filter: brightness(1.1);
 }
 
+.pincel-svg{
+    width: 30px;
+}
+
+.lapiz-svg{
+    width: 30px;
+}
+
 h1{
     text-decoration: underline;
     text-align: center;
     letter-spacing: 10px;
     font-size: 3em;
+    animation-name: juntar;
+    animation-duration: .5s;
 }
 
 /* MAIN*/
@@ -52,6 +76,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
 }
 
 /*Sobre mí*/
@@ -84,5 +110,39 @@ main{
 
 .palabra-clave{
     color: var(--color-principal);
+}
+
+/* Habilidades */
+
+.contenedor-habilidades{
+    border-top: .5px solid var(--color-principal);
+    padding: 10px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right,var(--color-principal),var(--color-principal-2));
+}
+
+.contenedor-habilidades > h3{
+    text-align: center;
+    color: var(--color-principal);
+    color: var(--color-fondo);
+}
+
+.habilidades{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.logo-habilidad{
+    width: 40px;
+    filter: brightness(.1);
+    transition-duration: .5s;
+    transition-property: filter;
+}
+
+.logo-habilidad:hover{
+    filter: brightness(1.1);
 }
 
