@@ -1,18 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @keyframes aparecer {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes brillar {
+    0%{
+        filter: brightness(1);
+    }
+    50%{
+        filter: brightness(2);
+    }
+    0%{
+        filter: brightness(1);
+    } 
 }
 
 @keyframes juntar {
-    from{letter-spacing: 100px;}
-    to{letter-spacing: 10px;}
+    0%{
+        letter-spacing: 100px;
+        opacity: 0;
+    }
+    50%{
+        letter-spacing: 10px;
+        opacity: 1;
+        filter: brightness(1);
+    }
+    80%{
+        filter: brightness(3);
+    }
+    100%{
+        filter: brightness(1);
+    }
+
     
 }
 
 :root{
     --color-fondo: #FEFFF0;
+    --color-fondo-proyecto:#FDFFE0;
     --color-principal:#FF5E52;
     --color-principal-2:#CF3F2B;
     --color-boton:#F2F527;
@@ -67,7 +98,7 @@ h1{
     letter-spacing: 10px;
     font-size: 3em;
     animation-name: juntar;
-    animation-duration: .5s;
+    animation-duration: 1s;
 }
 
 /* MAIN*/
@@ -85,10 +116,16 @@ main{
 .sobre-mi{
     width: 50%;
 }
-
+/*
 .sobre-mi > h2{
     margin-bottom: 0;
     color: var(--color-principal);
+}*/
+
+h2{
+    margin-bottom: 0;
+    color: var(--color-principal);
+    text-align: left;
 }
 
 .sobre-mi > div{
@@ -144,5 +181,79 @@ main{
 
 .logo-habilidad:hover{
     filter: brightness(1.1);
+}
+
+/* PROYECTOS */
+
+.proyectos{
+    margin-top: 100px;
+    width: 50%;
+}
+
+.proyectos > div{
+    padding-top: 30px;
+}
+
+.proyecto{
+    border-bottom: 1px solid var(--color-principal);
+    padding: 5px;
+}
+
+.proyecto:hover{
+    background-image: linear-gradient(to right, var(--color-fondo), var(--color-fondo-proyecto));
+}
+
+.proyecto > h4{
+    color: var(--color-principal);
+}
+
+.proyectos > div{
+    border-top: 3px solid var(--color-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.proyecto{
+    font-weight: 700;
+}
+
+.proyecto-6{
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+}
+
+.proyecto-5{
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+}
+
+.proyecto-4{
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+}
+
+.proyecto-3{
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+}
+
+.tecnologias-usadas{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.tecnologias-usadas > img{
+    width: 40px;
+}
+
+.enlace-proyecto{
+    background-color: var(--color-principal);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color-fondo)
 }
 
