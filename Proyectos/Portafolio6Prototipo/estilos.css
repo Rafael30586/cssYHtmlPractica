@@ -43,9 +43,12 @@
 
 :root{
     --color-fondo: #FEFFF0;
-    --color-fondo-proyecto:#FDFFE0;
+    --color-fondo-estilo-2:#4D4D4D;
+    --color-fondo-proyecto:#F9FFA1;
     --color-principal:#FF5E52;
     --color-principal-2:#CF3F2B;
+    --color-principal-estilo-2:#A9FFA1;
+    --color-principal-2-estilo-2:#8AFF80;
     --color-boton:#F2F527;
     --color-boton-2:#B3B51F;
 }
@@ -197,10 +200,15 @@ h2{
 .proyecto{
     border-bottom: 1px solid var(--color-principal);
     padding: 5px;
+    background-color: var(--color-fondo);
+    background-image: linear-gradient(to right, var(--color-fondo),transparent);
+    transition-property: background-color;
+    transition-duration: 1s;
+    border-top-right-radius: 10px;
 }
 
 .proyecto:hover{
-    background-image: linear-gradient(to right, var(--color-fondo), var(--color-fondo-proyecto));
+    background-color: var(--color-fondo-proyecto);
 }
 
 .proyecto > h4{
@@ -240,6 +248,11 @@ h2{
     grid-row: 2/span 1;
 }
 
+.proyecto-2{
+    grid-column: 1/span 1;
+    grid-row:3/span 1;
+}
+
 .tecnologias-usadas{
     display: flex;
     justify-content: start;
@@ -254,6 +267,62 @@ h2{
     background-color: var(--color-principal);
     padding: 5px;
     border-radius: 5px;
-    color: var(--color-fondo)
+    color: var(--color-fondo);
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top: 50px;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--color-principal),var(--color-principal-2));
+    padding: 20px;
+    color: var(--color-fondo);
+    font-weight: 700;
+}
+
+.logo-contacto{
+    width: 40px;
+    cursor: pointer;
+    transition-property: background-color, border-radius;
+    transition-duration: .5s;
+}
+
+.logo-contacto:hover{
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+}
+
+/* COLORES - TEMAS*/
+
+.body-color-1{
+    background-color: var(--color-fondo);
+}
+
+.letras.color-1{
+    color: var(--color-principal)
+}
+
+.body-color-2{
+    background-color: var(--color-fondo-estilo-2);
+}
+
+.letras-color-2{
+    color: var(--color-principal-estilo-2);
+}
+
+.fondo-color-2{
+    background-image: linear-gradient(to right, var(--color-principal-estilo-2),var(--color-principal-2-estilo-2));
+}
+
+.bordes-color-2{
+    border-color: var(--color-principal-estilo-2);
 }
 
