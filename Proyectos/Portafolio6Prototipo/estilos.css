@@ -202,13 +202,14 @@ h2{
     padding: 5px;
     background-color: var(--color-fondo);
     background-image: linear-gradient(to right, var(--color-fondo),transparent);
-    transition-property: background-color;
+    transition-property: background-color, transform;
     transition-duration: 1s;
     border-top-right-radius: 10px;
 }
 
 .proyecto:hover{
     background-color: var(--color-fondo-proyecto);
+    transform: translateY(-5px);
 }
 
 .proyecto > h4{
