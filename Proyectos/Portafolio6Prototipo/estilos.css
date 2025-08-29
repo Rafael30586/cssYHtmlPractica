@@ -155,7 +155,8 @@ h2{
 /* Habilidades */
 
 .contenedor-habilidades{
-    border-top: .5px solid var(--color-principal);
+    border-top-width: .5px;
+    border-top-style: solid;
     padding: 10px;
     padding-bottom: 30px;
     background-image: linear-gradient(to right,var(--color-principal),var(--color-principal-2));
@@ -179,11 +180,22 @@ h2{
     width: 40px;
     filter: brightness(.1);
     transition-duration: .5s;
-    transition-property: filter;
+    transition-property: filter, transform;
 }
 
 .logo-habilidad:hover{
     filter: brightness(1.1);
+    transform: scale(1.5,1.5);
+}
+/*
+.logo-spring-boot,.logo-react{
+    transition-duration: .5s;
+    transition-property: background-color,border-radius;
+}*/
+
+.logo-spring-boot:hover,.logo-react:hover{
+    background-color: var(--color-fondo-estilo-2);
+    border-radius: 20px;
 }
 
 /* PROYECTOS */
@@ -292,13 +304,12 @@ footer{
 .logo-contacto{
     width: 40px;
     cursor: pointer;
-    transition-property: background-color, border-radius;
+    transition-property: transform;
     transition-duration: .5s;
 }
 
 .logo-contacto:hover{
-    background-color: var(--color-fondo);
-    border-radius: 20px;
+    transform: scale(1.5,1.5);
 }
 
 /* COLORES - TEMAS*/
@@ -308,7 +319,11 @@ footer{
 }
 
 .letras.color-1{
-    color: var(--color-principal)
+    color: var(--color-principal);
+}
+
+.bordes-color-1{
+    border-color: var(--color-principal);
 }
 
 .body-color-2{

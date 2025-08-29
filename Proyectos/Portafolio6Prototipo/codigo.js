@@ -15,6 +15,7 @@ function cambiarTema(){
     }
     for(elemento of bordesColor){
         elemento.classList.toggle('bordes-color-2')
+        elemento.classList.toggle('bordes-color-1')
     }
 }
 
