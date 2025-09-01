@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @keyframes aparecer {
     from {
@@ -48,8 +51,42 @@
     67%{
         transform: rotate(20deg);
     }
-    
 }
+
+@keyframes segundo-nombre {
+    0%{
+        filter: blur(1px);
+        text-decoration: none;
+    }
+    50%{
+        filter: blur(20px);
+        text-decoration: none;
+    }
+}
+
+@keyframes apellido {
+    0%{
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    51%{
+        transform: rotate(-5deg);
+    }
+    56%{
+        transform: rotate(-10deg);
+    }
+    61%{
+        transform: rotate(-15deg);
+    }
+    67%{
+        transform: rotate(-20deg);
+    }
+}
+
 
 :root{
     --color-fondo: #FEFFF0;
@@ -67,9 +104,33 @@
 }
 
 body{
+    background-color: var(--color-fondo)
+}
+
+.letra-orbitron{
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
-    background-color: var(--color-fondo)
+}
+
+.letra-roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.letra-quintessential{
+    font-family: "Quintessential", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.letra-pacifico{
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
 /* HEADER */
 
@@ -128,6 +189,17 @@ h1{
 
 .primer-nombre{
     animation-name: primer-nombre;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.segundo-nombre{
+    animation-name: segundo-nombre;
+    animation-duration: 1s;
+}
+
+.apellido{
+    animation-name: apellido;
     animation-duration: 1s;
     animation-timing-function: ease-in;
 }

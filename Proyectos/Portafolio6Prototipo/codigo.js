@@ -11,6 +11,8 @@ const proyecto = document.querySelectorAll('.proyecto')
 const enlace = document.querySelectorAll('.enlace')
 const enlaceNumerado = document.querySelectorAll('.enlace-numerado')
 
+let temaFuente = 0
+
 function cambiarTema(){
     body.classList.toggle('body-color-2')
     for(elemento of botonTema){
@@ -43,4 +45,26 @@ function cambiarTema(){
     }
 }
 
+function cambiarFuente(){
+    if(temaFuente === 0){
+        body.classList.remove('letra-orbitron')
+        body.classList.add('letra-roboto')
+        temaFuente++
+    }else if(temaFuente === 1){
+        body.classList.remove('letra-roboto')
+        body.classList.add('letra-quintessential')
+        temaFuente++
+    }
+    else if(temaFuente === 2){
+        body.classList.remove('.letra-quintessential')
+        body.classList.add('letra-pacifico')
+        temaFuente++
+    }else if(temaFuente === 3){
+        body.classList.remove('letra-pacifico')
+        body.classList.add('letra-orbitron')
+        temaFuente = 0
+    }
+}
+
 botonColores.addEventListener("click",cambiarTema)
+botonFuentes.addEventListener("click",cambiarFuente)
