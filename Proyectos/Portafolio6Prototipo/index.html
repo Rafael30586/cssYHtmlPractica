@@ -20,17 +20,23 @@
                 <img src="pencil.svg" alt="" class="lapiz-svg">
             </button>
         </div>
-        <h1 class="letras-color-principal letras-color-1"><span class="fernando">Fernando </span>
-            <span class="rafael">Rafael </span>
-            <span class="alvarez">Alvarez</span>
-        </h1>
+        <div class="nombre-completo letras-color-principal letras-color-1">
+            <div class="primer-nombre"><span>Fernando</span></div>
+            <div class="segundo-nombre"><span>Rafael</span></div>
+            <div class="apellido"><span>Alvarez</span></div>
+        </div>
+        <!--
+        <h1 class="letras-color-principal letras-color-1"><span class="primer-nombre">Fernando </span>
+            <span class="segundo-nombre">Rafael </span>
+            <span class="apellido">Alvarez</span>
+        </h1>-->
     </header>
     <main>
         <section class="sobre-mi">
             <h2 class="letras-color-principal letras-color-1">Sobre mí</h2>
-            <div class="bordes-color">
+            <div class="contenedor-parrafo bordes-color">
                 <img src="https://www.fightersgeneration.com/np2/char1/ken-3rd.jpg" alt="" class="foto-personal">
-                <p>Hola, soy un desarrollador web con concimientos de <span class="palabra-clave letras-color-principal letras-color-1">backend</span> y <span
+                <p class="sobre-mi-parrafo texto">Hola, soy un desarrollador web con concimientos de <span class="palabra-clave letras-color-principal letras-color-1">backend</span> y <span
                         class="palabra-clave letras-color-principal letras-color-1">frontend</span>.
                     He realizado proyectos con diversos lenguajes y tecnologías como
                     <span class="palabra-clave letras-color-principal letras-color-1">Java</span>, <span class="palabra-clave letras-color-principal letras-color-1">SQL</span>,
@@ -48,7 +54,7 @@
             
             </div>
             <div class="contenedor-habilidades fondo-color-gradiente bordes-color bordes-color-1">
-                <h3>Habilidades</h3>
+                <h3 class="titulo-habilidades letras-fondo">Habilidades</h3>
                 <div class="habilidades">
                     <img src="java2.svg" alt="Logo de java" class="logo-habilidad" title="Java">
                     <img src="sql.svg" alt="Logo de SQL" class="logo-habilidad logo-sql" title="SQL">
@@ -68,10 +74,10 @@
 
         <section class="proyectos">
             <h2 class="letras-color-principal letras-color-1">Proyectos</h2>
-            <div class="bordes-color">
+            <div class="contenedor-proyectos bordes-color">
                 <div class="proyecto proyecto-6 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Aplicación con microservicios</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Aplicación con microservicios</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
@@ -79,13 +85,13 @@
                         <img src="sql.svg" alt="Logo de SQL" class="tecnologia-usada" title="SQL">
                         <img src="spring-boot.svg" alt="Logo de spring boot" class="tecnologia-usada" title="Spring boot">
                     </div>
-                    <h5><a href="#">Ver</a></h5>
-                    <h5><a href="#">Repositorio</a></h5>
+                    <h5><a href="#" class="enlace">Ver</a></h5>
+                    <h5><a href="#" class="enlace">Repositorio</a></h5>
                 </div>
 
                 <div class="proyecto proyecto-5 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Plataforma escolar</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Plataforma escolar</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
@@ -93,13 +99,13 @@
                         <img src="sql.svg" alt="Logo de SQL" class="tecnologia-usada" title="SQL">
                         <img src="spring-boot.svg" alt="Logo de spring boot" class="tecnologia-usada" title="Spring boot">
                     </div>
-                    <h5><a href="#">Ver</a></h5>
-                    <h5><a href="#">Repositorio</a></h5>
+                    <h5><a href="#" class="enlace">Ver</a></h5>
+                    <h5><a href="#" class="enlace">Repositorio</a></h5>
                 </div>
 
                 <div class="proyecto proyecto-4 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Aplicaciones con Angular</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Aplicaciones con Angular</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
@@ -108,13 +114,13 @@
                         <img src="typescript.svg" alt="Logo de Typescript" title="Typescript">
                         <img src="angular.svg" alt="Logo de Angular" title="Angular">
                     </div>
-                    <h5>Ver: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a> </h5>
-                    <h5>Repositorio: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a></h5>
+                    <h5 class="texto">Ver: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a> </h5>
+                    <h5 class="texto">Repositorio: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a></h5>
                 </div>
 
                 <div class="proyecto proyecto-3 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Personajes de ficción</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Personajes de ficción</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
@@ -122,13 +128,13 @@
                         <img src="sql.svg" alt="Logo de SQL" class="tecnologia-usada" title="SQL">
                         <img src="spring-boot.svg" alt="Logo de Spring boot" class="tecnologia-usada" title="Spring boot">
                     </div>
-                    <h5><a href="#">Ver</a></h5>
-                    <h5><a href="#">Repositorio</a></h5>
+                    <h5><a href="#" class="enlace">Ver</a></h5>
+                    <h5><a href="#" class="enlace">Repositorio</a></h5>
                 </div>
 
                 <div class="proyecto proyecto-2 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Aplicaciones con React</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Aplicaciones con React</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
@@ -137,28 +143,28 @@
                         <img src="javascript.svg" alt="Logo de  Javascript" title="Javascript">
                         <img src="react.svg" alt="Logo de React" title="React">
                     </div>
-                    <h5>Ver: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a> </h5>
-                    <h5>Repositorio: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a></h5>
+                    <h5 class="texto">Ver: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a> </h5>
+                    <h5 class="texto">Repositorio: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a></h5>
                 </div>
 
                 <div class="proyecto proyecto-1 bordes-color">
-                    <h4 class="letras-color-principal letras-color-1">Aplicaciones con Java swing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
+                    <h4 class="titulo-proyecto letras-color-principal letras-color-1">Aplicaciones con Java swing</h4>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi voluptatem neque blanditiis laboriosam enim laudantium! 
                         Nesciunt consequuntur sapiente voluptatum nisi blanditiis eius, labore accusantium deleniti amet mollitia consequatur facere!
                     </p>
                     <div class="tecnologias-usadas">
                         <img src="java2.svg" alt="Logo de java" class="tecnologia-usada" title="Java">
                         <img src="sql.svg" alt="Logo de SQL" class="tecnologia-usada" title="SQL">
                     </div>
-                    <h5>Ver: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a> <a href="#" class="enlace-proyecto">3</a></h5>
-                    <h5>Repositorio: <a href="#" class="enlace-proyecto">1</a> <a href="#" class="enlace-proyecto">2</a> <a href="#" class="enlace-proyecto">3</a></h5>
+                    <h5 class="texto">Ver: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a> <a href="#" class="enlace-numerado">3</a></h5>
+                    <h5 class="texto">Repositorio: <a href="#" class="enlace-numerado">1</a> <a href="#" class="enlace-numerado">2</a> <a href="#" class="enlace-numerado">3</a></h5>
                 </div>
             </div>
 
         </section>
     </main>
 
-    <footer class="fondo-color-gradiente"> 
+    <footer class="fondo-color-gradiente letras-fondo"> 
         <span>Fernando Rafael Alvarez - Desarrollador web</span> 
         <a href=""><img src="linkedin.svg" alt="Logo de Linkedin" class="logo-contacto" title="Linkedin"></a>
         <a href=""><img src="github.svg" alt="Logo de GitHub" class="logo-contacto" title="Github"></a>
