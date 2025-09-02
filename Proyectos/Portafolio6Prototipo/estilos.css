@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 @keyframes aparecer {
     from {
@@ -127,9 +128,9 @@ body{
     font-style: normal;
 }
 
-.letra-pacifico{
-    font-family: "Pacifico", cursive;
-    font-weight: 700;
+.letra-parisienne{
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
     font-style: normal;
 }
 /* HEADER */
@@ -185,6 +186,18 @@ h1{
     justify-content: center;
     gap: 50px;
     margin-top: 30px;
+}
+
+.nombre-completo-roboto{
+    letter-spacing: 8px;
+}
+
+.nombre-completo-quintessential{
+    letter-spacing: 10px;
+}
+
+.nombre-completo-parisienne{
+    font-size: 5rem;
 }
 
 .primer-nombre{
