@@ -3,6 +3,7 @@ const botonFuentes = document.getElementById("boton-fuentes")
 const body = document.querySelector('body')
 const botonTema = document.querySelectorAll('.boton-tema')
 const nombreCompleto = document.getElementById('nombre-completo')
+const fotoPersonal = document.getElementById('foto-personal')
 const letrasColorPrincipal = document.querySelectorAll('.letras-color-principal')
 const texto = document.querySelectorAll('.texto')
 const fondoColorGradiente = document.querySelectorAll('.fondo-color-gradiente')
@@ -12,6 +13,7 @@ const proyecto = document.querySelectorAll('.proyecto')
 const enlace = document.querySelectorAll('.enlace')
 const enlaceNumerado = document.querySelectorAll('.enlace-numerado')
 const sonidoBoton = new Audio('sonido-boton.wav')
+const estirarFoto = new Audio('estirar-foto.wav')
 
 let temaFuente = 0
 
@@ -79,6 +81,18 @@ function cambiarFuente(){
     // console.log('Tema fuente: ',temaFuente)
 }
 
+function aparecerFoto(){
+    fotoPersonal.classList.add('estirar-foto')
+    estirarFoto.currentTime = 0
+    estirarFoto.play()
+}
+
+function soltarFoto(){
+    fotoPersonal.classList.remove('estirar-foto')
+}
+
 
 botonColores.addEventListener("click",cambiarTema)
 botonFuentes.addEventListener("click",cambiarFuente)
+fotoPersonal.addEventListener("mouseover",aparecerFoto)
+fotoPersonal.addEventListener('mouseout',soltarFoto)
