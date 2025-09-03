@@ -238,6 +238,8 @@ header{
     gap: 400px;
 }
 
+
+
 .boton-tema{
     background-image: radial-gradient(var(--color-boton),var(--color-boton-2));
     width: 50px;
@@ -258,15 +260,15 @@ header{
 .lapiz-svg{
     width: 30px;
 }
-
+/*
 h1{
     text-decoration: underline;
     text-align: center;
     letter-spacing: 10px;
-    font-size: 3em;/*
+    font-size: 3em;
     animation-name: juntar;
-    animation-duration: 1s;*/
-}
+    animation-duration: 1s;
+}*/
 
 .nombre-completo{
     font-size: 4rem;
@@ -277,17 +279,25 @@ h1{
     margin-top: 30px;
 }
 
+
+
 .nombre-completo-roboto{
     letter-spacing: 8px;
 }
+
+
 
 .nombre-completo-quintessential{
     letter-spacing: 10px;
 }
 
+
+
 .nombre-completo-parisienne{
     font-size: 5rem;
 }
+
+
 
 .primer-nombre{
     animation-name: primer-nombre;
@@ -304,6 +314,64 @@ h1{
     animation-name: apellido;
     animation-duration: 1s;
     animation-timing-function: ease-in;
+}
+
+@media screen and (max-width: 1000px){
+    .contenedor-boton-estilos{
+        gap:300px;
+    }
+    .nombre-completo{
+        font-size: 3.5rem;
+        gap: 50px;
+    }
+    .nombre-completo-roboto{
+        letter-spacing: 8px;
+    }
+    .nombre-completo-quintessential{
+        letter-spacing: 10px;
+    }
+    .nombre-completo-parisienne{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .contenedor-boton-estilos{
+        gap:200px;
+    }
+    .nombre-completo{
+        font-size: 3rem;
+        gap: 20px;
+    }
+    .nombre-completo-roboto{
+        letter-spacing: 6px;
+    }
+    .nombre-completo-quintessential{
+        letter-spacing: 5px;
+    }
+    .nombre-completo-parisienne{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contenedor-boton-estilos{
+        gap:200px;
+    }
+    .nombre-completo{
+        font-size: 1.5rem;
+        gap: 20px;
+        text-decoration: underline;
+    }
+    .nombre-completo-roboto{
+        letter-spacing: 4px;
+    }
+    .nombre-completo-quintessential{
+        letter-spacing: 5px;
+    }
+    .nombre-completo-parisienne{
+        font-size: 1.8rem;
+    }
 }
 
 /* MAIN*/
@@ -374,6 +442,18 @@ h2{
 
 .palabra-clave{
     color: var(--color-principal);
+}
+
+@media screen and (max-width: 1200px){
+    .sobre-mi{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sobre-mi{
+        width: 95%;
+    }
 }
 
 /* Habilidades */
@@ -479,7 +559,7 @@ h2{
     row-gap: 30px;
 }
 
-
+/*
 .proyecto-6{
     grid-column: 1/span 1;
     grid-row: 1/span 1;
@@ -503,7 +583,7 @@ h2{
 .proyecto-2{
     grid-column: 1/span 1;
     grid-row:3/span 1;
-}
+}*/
 
 .tecnologias-usadas{
     display: flex;
@@ -532,6 +612,16 @@ h2{
     box-sizing: border-box;
     width: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .proyectos{
+        width: 100%;
+    }
+    .contenedor-proyectos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 /* FOOTER */
