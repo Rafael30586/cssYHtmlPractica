@@ -3,6 +3,7 @@
 :root{
     --color-header: #CF2402;
     --color-2: #8C1A00;
+    --theme-button-color: #09BD79;
 }
 
 .body{
@@ -57,7 +58,7 @@
     align-items: center;
 }
 
-.button-submit{
+.submit-button{
     height: 25px;
     font-family: inherit;
     font-weight: inherit;
@@ -66,4 +67,14 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.theme-button{
+    height: 25px;
+    width: 25px;
+    background-color: var(--theme-button-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
 }

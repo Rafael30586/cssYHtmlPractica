@@ -1,0 +1,54 @@
+:root{
+    --change-image-button-container: #168CD9;
+    --color-1:#CF2402;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(5px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokemon-image{
+    height: 300px;
+    width: 300px;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: 5px groove black;
+    border-bottom-color: var(--color-1);
+    border-right-color: var(--color-1);
+    border-radius: 50%;
+}
+
+.change-image-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid var(--change-image-button-container);
+}
+
+.change-image-button-image{
+    width: 100%;
+    height: 100%;
+}
